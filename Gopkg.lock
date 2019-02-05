@@ -14,12 +14,6 @@
   revision = "f0300d1749da6fa982027e449ec0c7a145510c3c"
 
 [[projects]]
-  branch = "master"
-  name = "github.com/beorn7/perks"
-  packages = ["quantile"]
-  revision = "3a771d992973f24aa725d07868b467d1ddfceafb"
-
-[[projects]]
   name = "github.com/certifi/gocertifi"
   packages = ["."]
   revision = "deb3ae2ef2610fde3330947281941c562861188b"
@@ -58,7 +52,7 @@
     "goasupport/jsonapi_errors_helpers",
     "goasupport/status",
     "log",
-    "metric",
+    "resource",
     "sentry"
   ]
   revision = "45960af9689499e9f5e5a4ebd142a8189a19ca1e"
@@ -103,7 +97,6 @@
     "goagen/meta",
     "goagen/utils",
     "goatest",
-    "logging/logrus",
     "middleware",
     "middleware/gzip",
     "middleware/security/jwt",
@@ -121,22 +114,6 @@
     "golint"
   ]
   revision = "883fe33ffc4344bad1ecd881f61afd5ec5d80e0a"
-
-[[projects]]
-  name = "github.com/golang/protobuf"
-  packages = ["proto"]
-  revision = "aa810b61a9c79d51363740d207bb46cf8e620ed5"
-  version = "v1.2.0"
-
-[[projects]]
-  name = "github.com/google/gops"
-  packages = [
-    "agent",
-    "internal",
-    "signal"
-  ]
-  revision = "89672dbe3c4ba97d53af7e839e8097e1ccbb4977"
-  version = "v0.3.5"
 
 [[projects]]
   name = "github.com/hashicorp/go-immutable-radix"
@@ -180,12 +157,6 @@
   version = "v1.0"
 
 [[projects]]
-  branch = "master"
-  name = "github.com/kardianos/osext"
-  packages = ["."]
-  revision = "ae77be60afb1dcacde03767a8c37337fad28ac14"
-
-[[projects]]
   name = "github.com/magiconair/properties"
   packages = ["."]
   revision = "c2353362d570a7bfa228149c62842019201cfb71"
@@ -208,12 +179,6 @@
   packages = ["."]
   revision = "6ca4dbf54d38eea1a992b3c722a76a5d1c4cb25c"
   version = "v0.0.4"
-
-[[projects]]
-  name = "github.com/matttproud/golang_protobuf_extensions"
-  packages = ["pbutil"]
-  revision = "c12348ce28de40eed0136aa2b644d0ee0650e56c"
-  version = "v1.0.1"
 
 [[projects]]
   name = "github.com/mitchellh/mapstructure"
@@ -249,40 +214,10 @@
   version = "v0.8.0"
 
 [[projects]]
-  name = "github.com/prometheus/client_golang"
-  packages = [
-    "prometheus",
-    "prometheus/promhttp"
-  ]
-  revision = "c5b7fccd204277076155f10851dad72b76a49317"
-  version = "v0.8.0"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/prometheus/client_model"
-  packages = ["go"]
-  revision = "5c3871d89910bfb32f5fcab2aa4b9ec68e65a99f"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/prometheus/common"
-  packages = [
-    "expfmt",
-    "internal/bitbucket.org/ww/goautoneg",
-    "model"
-  ]
-  revision = "7e9e6cabbd393fc208072eedef99188d0ce788b6"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/prometheus/procfs"
-  packages = [
-    ".",
-    "internal/util",
-    "nfs",
-    "xfs"
-  ]
-  revision = "185b4288413d2a0dd0806f78c90dde719829e5ae"
+  name = "github.com/pmezard/go-difflib"
+  packages = ["difflib"]
+  revision = "792786c7400a136282c1664665ae0a8db921c6c2"
+  version = "v1.0.0"
 
 [[projects]]
   name = "github.com/satori/go.uuid"
@@ -336,6 +271,15 @@
   version = "v1.2.1"
 
 [[projects]]
+  name = "github.com/stretchr/testify"
+  packages = [
+    "assert",
+    "require"
+  ]
+  revision = "ffdc059bfe9ce6a4e144ba849dbedead332c6053"
+  version = "v1.3.0"
+
+[[projects]]
   branch = "master"
   name = "github.com/zach-klippenstein/goregen"
   packages = ["."]
@@ -386,6 +330,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "5579eeeb23ce0588171fadb4cfeb5af4130e3edc736d30310a44b3763071721d"
+  inputs-digest = "274526d50a5c760c244c7c23c9673dda9c889f6a15bc8bcf652f6e8c058bf71b"
   solver-name = "gps-cdcl"
   solver-version = 1
